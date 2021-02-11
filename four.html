@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			Body {
+				font-family: Calibri, Helvetica, sans-serif;
+				background-color: pink;
+			}
+			.submit {
+				background-color: #4c90af;
+				width: 20%;
+				color: black;
+				padding: 15px;
+				margin: 10px 30px;
+			}
+			form {
+				border: 3px solid #f1f1f1;
+			}
+			input {
+				width: 100%;
+				margin: 8px 0;
+				padding: 12px 20px;
+				display: inline-block;
+				border: 2px solid green;
+				box-sizing: border-box;
+			}
+
+			.container {
+				padding: 25px;
+				background-color: lightblue;
+			}
+		</style>
+	</head>
+	<body>
+		<form ... onsubmit="return checkForm(this);">
+            
+			<div class="container">
+				<label>Username : </label>
+				<input
+					type="text"
+					placeholder="Firstname"
+					name="firstname"
+					required
+				/>
+					<input type="checkbox" required name="checkme" /> I accept
+					the <u>Terms and Conditions</u>
+				
+                    <input type="submit" class="submit"></input>
+				
+			</div>
+		</form>
+	</body>
+</html>
